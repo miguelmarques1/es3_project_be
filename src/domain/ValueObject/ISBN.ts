@@ -1,4 +1,3 @@
-import { parse } from "path";
 import { EntityValidationException } from "../Exception/EntityValidationException";
 
 export class ISBN {

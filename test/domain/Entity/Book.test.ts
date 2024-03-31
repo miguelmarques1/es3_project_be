@@ -10,10 +10,10 @@ test("Deve criar um livro com todos os atributos válidos", function () {
     const year = 2001;
     const title = "O dia em que a terra parou";
     const publisher = new Publisher("Editora Luz");
-    const preficicationGroup = new PrecificationGroup(1, "Bronze", 25);
+    const precificationGroup = new PrecificationGroup(1, "Bronze", 25);
     const manufactoringCosts = 250.9;
     const edition = 1;
-    const isbn = new ISBN("ISBN 978-85-333-0227-3");
+    const isbn = "ISBN 978-85-333-0227-3";
     const pagesQt = 54;
     const sinopse = "Um dia, a terra parou de girar."
     const height = 40;
@@ -26,7 +26,7 @@ test("Deve criar um livro com todos os atributos válidos", function () {
         year,
         title,
         publisher,
-        preficicationGroup,
+        precificationGroup,
         manufactoringCosts,
         edition,
         isbn,

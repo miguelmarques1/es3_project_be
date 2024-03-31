@@ -1,5 +1,5 @@
-import { ISBN } from "../../src/domain/ValueObject/ISBN";
-import { EntityValidationException } from "../../src/domain/Exception/EntityValidationException";
+import { ISBN } from "../../../src/domain/ValueObject/ISBN";
+import { EntityValidationException } from "../../../src/domain/Exception/EntityValidationException";
 
 test("Deve criar um ISBN de 13 dígitos válido", function() {
     const isbnValue = "ISBN 978-85-333-0227-3";
