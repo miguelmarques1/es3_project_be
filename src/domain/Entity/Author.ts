@@ -1,4 +1,5 @@
 import { EntityValidationException } from "../Exception/EntityValidationException";
+import { DomainValidation } from "../Validation/DomainValidation";
 
 export class Author {
     public name!: string;
@@ -16,6 +17,6 @@ export class Author {
     }
 
     private validate() {
-        if(this.name.length < 3) throw new EntityValidationException("Invalid name");
+        DomainValidation.strDefaultLenght(this.name, "Invalid author name");
     }
 }

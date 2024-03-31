@@ -1,4 +1,5 @@
 import { EntityValidationException } from "../Exception/EntityValidationException";
+import { DomainValidation } from "../Validation/DomainValidation";
 
 export class Publisher {
     public name!: string;
@@ -16,6 +17,6 @@ export class Publisher {
     }
 
     private validate() {
-        if(this.name.length < 3) throw new EntityValidationException("Invalid name");
+        DomainValidation.strDefaultLenght(this.name, "Invalid publisher name");
     }
 }
