@@ -3,5 +3,5 @@ export class PrecificationGroup {
         readonly id: number,
         readonly name: string,
         readonly profitMargin: number
-    ) {}   
+    ) { }
 }

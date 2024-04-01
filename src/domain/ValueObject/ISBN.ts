@@ -28,7 +28,7 @@ export class ISBN {
     private thirteenDigitsValidation(value: string) : boolean {
         let total = 0;
         for(let i = 0; i < 13; i++) {
-            let parsedChar = Number.parseInt(value[i]);
+            let parsedChar = Number.parseInt(value.charAt(i));
             let multiplier = i % 2 == 0 ? 1 : 3;
             total += parsedChar * multiplier;
         }
